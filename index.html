@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Spotify</title>
+  <link rel="shortcut icon" href="assets/img/favicon-spotify.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="assets/img/spotify-logo.png" alt="Logo do Spotify">
+    </div>
+    <div class="message-error">
+      <span> <img src="assets/img/alerta.png" alt="Sinal de alerta"> Nome de usuário ou senha incorretos.</span>
+    </div>
+    <div class="login-methods">
+      <button class="facebook ps"><img class="icon-login-method" src="assets/img/facebook.svg" alt="Logo do Facebook">
+        Continuar com o
+        Facebook</button>
+      <span class="space-method"></span>
+      <button class="apple"><img class="icon-login-method" src="assets/img/apple.svg" alt="Logo da Apple"> Continuar com
+        a
+        Apple</button>
+      <span class="space-method"></span>
+      <button class="google"><img class="icon-login-method" src="assets/img/google.svg" alt="Logo da Google"> Continuar
+        com o
+        Google</button>
+      <span class="space-method"></span>
+      <button class="tell">Continuar com o número de Telefone</button>
+    </div>
+    
+    <div class="spacing-form">
+      <hr>
+      <span>ou</span>
+      <hr>
+    </div>
+
+    <div class="form">
+      <div class="input-group">
+        <div class="input-box">
+          <label for="email">Endereço de e-mail ou nome de usuário</label>
+          <span class="space-method"></span>
+          <input class="email required" id="email" type="email" placeholder="Endereço de e-mail ou nome de usuário">
+          <p class="p-message-error"><img class="p-error-message-icon" src="assets/img/alerta2.png" alt="Sinal de alerta"> Insira seu nome de usuário ou endereço de e-mail do Spotify.</p>
+        </div>
+
+        <div class="input-box"> 
+          <label for="password">Senha</label>
+          <span class="space-method"></span>
+          <input class="password required" id="password" type="password" placeholder="Senha">
+          <p class="p-message-error"><img class="p-error-message-icon" src="assets/img/alerta2.png" alt="Sinal de alerta"> Por favor, insira sua senha.</p>
+          <a href="#">Esqueçeu sua senha?</a>
+        </div>
+
+        <div class="input-box">
+          <div class="checkbox-container">
+            <input type="checkbox" id="cb1" />
+            <label class="label-reset-password" for="cb1">Lembrar de mim</label>
+          </div>
+        </div>
+      </div>
+
+       <div class="login-button">
+        <button>Entrar</button>
+      </div> 
+
+      <div class="spacing-form">
+        <hr class="spacing-create-account-button">
+      </div> 
+
+      <div class="create-account-button">
+        <h2>Não tem uma conta?</h2>
+        <button>Inscrever-se no Spotify</button>
+      </div>
+      <span class="space-method"></span>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
